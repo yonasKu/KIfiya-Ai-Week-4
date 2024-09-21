@@ -80,16 +80,6 @@ def detect_outliers_zscore(df, column, threshold=3):
     return outliers
 
 
-# Feature Engineering: Extract month, day, year, and day of the week
-# def add_date_features(df):
-#     logging.info("Adding date-related features...")
-#     df['Year'] = df.index.year
-#     df['Month'] = df.index.month
-#     df['Day'] = df.index.day
-#     df['DayOfWeek'] = df.index.dayofweek
-#     logging.info("Date features added.")
-#     return df
-
 
 def add_date_features(df):
     logger.info("Adding date-related features...")
